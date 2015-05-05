@@ -24,6 +24,10 @@ html,body {
 .head-left{
 	float:left;
 }
+.head-left img{
+	width:50%;
+}
+
 .head-right{
 	float:right;
 	width: 46%;
@@ -71,7 +75,7 @@ html,body {
 }
 .top-nav ul li a{
 	color: #FFF;
-	font-size: 23px;
+	font-size: 20px;
 	padding: 1.3em 2em;
 	display: block;
 	text-decoration: none;
@@ -360,6 +364,10 @@ ul.social-slide li i.mac{
 }
 /*-- Slider part Ends Here --*/
 /*-- banner-bottom --*/
+.banner-bottom {
+	background-color: #F0F0F0;
+	min-height: 700px;
+}
 .banner-bottom h3{
 	font-size: 30px;
 	text-align: center;
@@ -429,6 +437,13 @@ ul.social-slide li i.mac{
 	margin: 1em 0;
 	text-transform:uppercase;
 }
+.bottom-grid h5{
+	font-size:22px;
+	color:#414141;
+	font-weight: 700;
+	margin: 1em 0;
+	text-transform:uppercase;
+}
 .bottom-grid p{
 	font-size: 16px;
 	color: #898888;
@@ -441,10 +456,10 @@ ul.social-slide li i.mac{
 /*-- about --*/
 .about {
 	width: 100%;
-
+	min-height: 700px;
 }
 
-.about amg{
+.about img{
 	height: 80%;
 }
 
@@ -473,6 +488,19 @@ ul.social-slide li i.mac{
 	margin: 1em 0 0 0;
 	line-height: 2em;
 }
+.about-grid-right img{
+	box-shadow: 10px 10px 5px #888888;
+	max-width:80%;
+	margin:auto;
+	display:block;
+	max-height:80%;
+	width: auto;
+	height: auto;
+	transition: all 300ms!important;
+	-webkit-transition: all 300ms!important;
+	-moz-transition: all 300ms!important;
+}
+
 .botton a{
 	border: 1px solid #00FFD2;
 	font-family: inherit;
@@ -557,9 +585,65 @@ ul.callbacks_tabs.callbacks2_tabs {
 ul.callbacks_tabs.callbacks2_tabs a:after {
 	border-radius: 0;
 }
+/*-- location --*/
+.maplocation {
+	width:100%;
+	min-height:700px;
+}
+.maplocation-info h3{
+	font-size: 30px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #414141;
+	font-weight:700;
+	margin: 2em 0;
+}
+
+.maplocation-info h4{
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.5em;
+	width: 91%;
+	margin: 0;
+	text-transform: uppercase;
+}
+.maplocation-grid{
+	position:relative;
+}
+.maplocation-grid-info{
+	border: solid 1px #E7E7E7;
+	padding: 1em;
+}
+.maplocation-grid-info img{
+	width:100%;
+}
+.maplocation-grid-info h4{
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.5em;
+	width: 91%;
+	margin: 0;
+	text-transform: uppercase;
+}
+.maplocation-grid-info p{
+	font-size: 16px;
+	color: #898888;
+	margin: 1em 0 0 0;
+	line-height: 2em;
+}
+.maplocation-grid:hover div.caption {
+	display: block;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	top: 19%;
+	left: 30%;
+}
 /*-- floorplan --*/
 .floorplan {
 	width:100%;
+	min-height:700px;
 }
 .floorplan-info h3{
 	font-size: 30px;
@@ -662,7 +746,7 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 }
 /*-- gallery --*/
 .gallery{
-	min-height:500px;
+	min-height:700px;
 	position:relative;
 	background-color: #F0F0F0;
 	width:100%;
@@ -803,6 +887,7 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 .contact {
 		background-color: #F0F0F0;
 		width:100%;
+		min-height:700px;
 }
 .contact-info h3{
 	font-size: 30px;
@@ -1071,6 +1156,9 @@ span.menu {
 	.bottom-grid h4 {
 		font-size: 22px;
 	}
+	.bottom-grid h5 {
+		font-size: 18xpx;
+	}
 	.bottom-grid p {
 		margin: 0 0 1em 0;
 	}
@@ -1080,6 +1168,9 @@ span.menu {
 	}
 	.about-grid-left h4 {
 		font-size: 18px;
+	}
+	.about-grid-right img {
+		width: 100px;
 	}
 	.about-bottom-grid-left h4 {
 		font-size: 18px;
@@ -1428,7 +1519,10 @@ span.menu {
 		padding: .3em .5em;
 	}
 	.about-grid-right img{
-		width:100%;
+		width: 200px;
+		display: inline;
+		    margin: 5px;
+		    border: 1px solid #ffffff;
 	}
 	.about-bottom-grid-left h4 {
 		font-size: 16px;
