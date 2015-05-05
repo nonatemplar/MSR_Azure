@@ -439,6 +439,15 @@ ul.social-slide li i.mac{
 	display:block;
 }
 /*-- about --*/
+.about {
+	width: 100%;
+
+}
+
+.about amg{
+	height: 80%;
+}
+
 .about-info h3{
 	font-size: 30px;
 	text-align: left;
@@ -520,7 +529,7 @@ ul.social-slide li i.mac{
 .testimonial-slid-info{
 	margin-top: 9em;
 }
-.testimonial-slid p{
+.testimonial-slid-info h1{
 	color: #FFF;
 	font-size: 30px;
 	margin: 0 auto;
@@ -528,6 +537,15 @@ ul.social-slide li i.mac{
 	text-align: center;
 	font-weight: 700;
 }
+.testimonial-slid-info p{
+	color: #FFF;
+	font-size: 20px;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	font-weight: 700;
+}
+
 ul.callbacks_tabs.callbacks2_tabs li {
 	display: inline-block;
 	margin: 0 .5em;
@@ -540,6 +558,9 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 	border-radius: 0;
 }
 /*-- floorplan --*/
+.floorplan {
+	width:100%;
+}
 .floorplan-info h3{
 	font-size: 30px;
 	text-align: left;
@@ -640,6 +661,13 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 	margin: 0 0 0 2em;
 }
 /*-- gallery --*/
+.gallery{
+	min-height:500px;
+	position:relative;
+	background-color: #F0F0F0;
+	width:100%;
+}
+
 .gallery-info h3{
 	font-size: 30px;
 	text-align: left;
@@ -772,6 +800,10 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 	right: 66%;
 }
 /*-- contact --*/
+.contact {
+		background-color: #F0F0F0;
+		width:100%;
+}
 .contact-info h3{
 	font-size: 30px;
 	text-align: left;
@@ -783,7 +815,7 @@ ul.callbacks_tabs.callbacks2_tabs a:after {
 .map iframe
 {
 	width: 100%;
-	min-height: 400px;
+	min-height: 300px;
 	border: none;
 }
 .contact-grids {
@@ -1554,7 +1586,8 @@ span.menu {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	width: 33%;
+	
+	width: 24%;
 	display:none;
 	float:left;
 	overflow:hidden;
@@ -1563,12 +1596,14 @@ div#portfoliolist {
 	padding: 0px 0px;
 }	
 .portfolio-wrapper {
+	
 	overflow:hidden;
 	position: relative !important;
 	cursor:pointer;
 }
 .portfolio img {
-	max-width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	max-width:80%;
 	margin:auto;
 	display:block;
 	max-height:100%;
